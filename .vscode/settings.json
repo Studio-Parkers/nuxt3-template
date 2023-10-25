@@ -1,0 +1,20 @@
+{
+    "files.exclude": {
+        // Misc
+        "**/.DS_Store": true,
+        "**/Thumbs.db": true,
+
+        // Git
+        "**/.git": true,
+        "**/.gitignore": true,
+
+        // Node
+        "yarn.lock": true,
+        "node_modules": true,
+        "tsconfig.json": true,
+
+        // Nuxt
+        ".nuxt": true,
+        "nuxt.config.ts": true
+    }
+}
