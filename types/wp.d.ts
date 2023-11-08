@@ -1,34 +1,23 @@
 declare type Yoast = {
-    canonical: string;
-    permalink: string;
     title: string;
     description: string;
-    id: number;
-    site_name: string;
-    alternate_site_name: string;
-    wordpress_site_name: string;
-    site_url: string;
-    company_name: string;
-    company_alternate_name: string;
-    company_logo_id: unknown;
-    company_logo_meta: unknown;
-    person_logo_id: string;
-    person_logo_meta: string;
-    site_user_id: number;
-    site_represents: unknown;
-    site_represents_reference: unknown;
-    schema_page_type: string[];
-    schema_article_type: string;
-    main_schema_id: string;
-    main_entity_of_page: unknown;
-    open_graph_enabled: boolean;
-    open_graph_publisher: string;
+    robots: {
+        index: string;
+        follow: string;
+        "max-snippet": string;
+        "max-image-preview": string;
+        "max-video-preview": string;
+    };
+    og_locale: string;
+    og_type: string;
+    og_title: string;
+    og_description: string;
+    og_url: string;
+    og_site_name: string;
+    article_modified_time: string;
     twitter_card: string;
-    page_type: string;
-    has_article: boolean;
-    has_image: boolean;
-    main_image_id: unknown;
-    main_image_url: unknown;
+    twitter_misc: Record<string, string>;
+    schema: Record<string, any>[];
 };
 
 declare type WPContent = {
@@ -83,7 +72,7 @@ declare type WPPost = {
         curies: Array<WPLink>;
     };
     acf?: Record<string, any>;
-    yoast?: Yoast;
+    yoast_head_json?: Yoast;
     yoast_head?: string;
 };
 
@@ -93,6 +82,8 @@ declare type WPRoute = {
     id: number;
     slug: string;
     template: string;
+    permalink: string;
+    post_type: string;
 };
 
 declare type WPMenuItem = {

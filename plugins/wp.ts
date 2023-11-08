@@ -29,16 +29,17 @@ export default defineNuxtPlugin({
         {
             const page = routes.value[i];
             router.addRoute({
-                path: `/${page.slug}`,
                 name: page.slug,
+                path: page.permalink,
                 meta: {
-                    pageID: page.id
+                    pageID: page.id,
+                    post_type: page.post_type
                 },
                 component: ()=> {
                     if (page.template)
                         return import(`~/pages/${page.template}.vue`);
 
-                    return import("~/pages/wp-default.vue");
+                    return import("~/pages/wp-page.vue");
                 }
             });
         }

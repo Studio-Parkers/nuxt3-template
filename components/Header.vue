@@ -43,8 +43,9 @@ nav
         a
         {
             color: #FFFFFF;
+            text-decoration: none;
 
-            &.active {color: red}
+            &.active {color: hotpink}
         }
     }
 }
