@@ -1,0 +1,22 @@
+# Editor
+.vscode
+.idea
+
+# Node/Nuxt
+.nuxt
+dist
+.output
+node_modules
+
+# Git
+.git*
+
+# Logs
+/logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# macOS
+.DS_Store

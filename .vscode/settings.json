@@ -1,0 +1,25 @@
+{
+    "files.exclude": {
+        // Git
+        "**/.git": true,
+        "**/.gitignore": true,
+
+        // Node
+        "yarn.lock": true,
+        "node_modules": true,
+        "tsconfig.json": true,
+
+        // Nuxt
+        ".nuxt": true,
+        "nuxt.config.ts": true,
+
+        // Misc
+        "**/.DS_Store": true,
+        "**/Thumbs.db": true,
+
+        // Docker
+        "Dockerfile": true,
+        ".dockerignore": true,
+        "docker-compose.yml": true
+    }
+}

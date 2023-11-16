@@ -1,2 +1,2 @@
-# Nuxt3-templates
-Check out the releases or different branches for the available templates
+# Nuxt3-templates - Default
+This is the default Nuxt3.js template
